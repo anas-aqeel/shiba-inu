@@ -5,6 +5,7 @@ import telegramLogo from "./assets/icon/Vector.png";
 import nft from "./assets/nft (1).png";
 import nft2 from "./assets/nft (2).png";
 import nft3 from "./assets/nft (3).png";
+import nft4 from "./assets/nft (4).png";
 
 function App() {
   return (
@@ -55,8 +56,8 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="flex items-center">
-            <div className="bg-opacity-[0.13] rounded-lg backdrop-blur-2xl bg-white p-5 bg-no-repeat text-white text-lg">
+          <div className="flex items-center relative">
+            <div className=" bg-opacity-[0.13] rounded-lg backdrop-blur-2xl bg-white p-5 bg-no-repeat text-white text-lg">
               Welcome to Shaiba, the ultimate Ai for the crypto community. With
               real-time information on coins, market trends, and popular Twitter
               users, Shaiba is the tool you need to stay ahead of the game. Our
@@ -65,35 +66,36 @@ function App() {
               revolutionary DAO. Join the Shaiba revolution today and start
               navigating the crypto world with ease.
             </div>
+            <div className="flex font-bold absolute bg-white px-7 py-4 -bottom-12 right-[22%] rounded-b-3xl left-[25%] ">
+              Community
+              <div className="ml-8 bg-black rounded-full h-7 w-7 flex justify-center items-center">
+                <img src={telegramLogo} />
+              </div>
+              <div className="bg-black rounded-full h-7 w-7 flex justify-center items-center ml-2">
+                <img src={telegramLogo} />
+              </div>
+            </div>
           </div>
         </div>
         {/* Container Ends*/}
 
-        <div className="grid grid-cols-4">
-          <div className="flex">
-            <img src={nft} className="h-full w-full" />
-            <div className=" bg-white rounded-full h-7 w-7 flex justify-center items-center ml-2">
-              <img src={telegramLogo} />
-            </div>
-          </div>
-          <div className="flex">
-            <img src={nft2} className="h-full w-full" />
-            <div className=" bg-white rounded-full h-7 w-7 flex justify-center items-center ml-2">
-              <img src={telegramLogo} />
-            </div>
-          </div>
-          <div className="flex">
-            <img src={nft3} className="h-full w-full" />
-            <div className=" bg-white rounded-full h-7 w-7 flex justify-center items-center ml-2">
-              <img src={telegramLogo} />
-            </div>
-          </div>
-          <div className="flex">
-            <img src={nft} className="h-full w-full" />
-            <div className=" bg-white rounded-full h-7 w-7 flex justify-center items-center ml-2">
-              <img src={telegramLogo} />
-            </div>
-          </div>
+        <div className="grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-2">
+          <img
+            src={nft}
+            className="h-full w-full mx-auto cursor-pointer duration-200 hover:-translate-y-2"
+          />
+          <img
+            src={nft2}
+            className="h-full w-full mx-auto cursor-pointer duration-200 hover:-translate-y-2"
+          />
+          <img
+            src={nft}
+            className="h-full w-full mx-auto cursor-pointer duration-200 hover:-translate-y-2"
+          />
+          <img
+            src={nft}
+            className="h-full w-full mx-auto cursor-pointer duration-200 hover:-translate-y-2"
+          />
         </div>
       </div>
     </div>
