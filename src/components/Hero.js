@@ -6,15 +6,15 @@ const Hero = () => {
   return (
     <div className="grid lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 px-4 sm:px-8 py-3 gap-x-10 gap-y-5">
     {/* bg-[length:100%_100%] */}
-    <div className="md:col-span-2 h-[100%] lg:bg-[url('./assets/container.png')] bg-[url('./assets/container1.png')]  bg-no-repeat bg-[length:100%_100%]  w-[inherit]  flex justify-center md:px-14 px-5 py-20 flex-col">
+    <div className="md:col-span-2 h-[100%] lg:bg-[url('../assets/container.png')] bg-[url('../assets/container1.png')]  bg-no-repeat bg-[length:100%_100%]  w-[inherit]  flex justify-center md:px-14 px-5 py-20 flex-col">
       <p className=" mt-10  md:text-[50px] sm:text-[37px] text-[30px] text-white font-bold fontcustom">
         Revolutionizing the crypto world with Shaiba
       </p>
       <div className="flex md:0 sm:mt-10 mt-0">
-        <div className="bg-[url('./assets/button1.png')] bg-[length:8rem_3rem]  bg-no-repeat h-12 w-32 cursor-pointer flex justify-center items-center text-white">
+        <div className="bg-[url('../assets/button1.png')] bg-[length:8rem_3rem]  bg-no-repeat h-12 w-32 cursor-pointer flex justify-center items-center text-white">
           Buy
         </div>
-        <div className="ml-3 bg-[url('./assets/button2.png')] bg-[length:8rem_3rem]  bg-no-repeat h-12 w-32 cursor-pointer flex justify-center items-center text-black">
+        <div className="ml-3 bg-[url('../assets/button2.png')] bg-[length:8rem_3rem]  bg-no-repeat h-12 w-32 cursor-pointer flex justify-center items-center text-black">
           Chat
         </div>
       </div>
